@@ -1,0 +1,20 @@
+body {
+  background-color: #999;
+}
+
+.main-tittle span,
+.main-tittle i {
+  color: rgb(95, 92, 92);
+}
+
+.url-tittle img {
+  width: 100%;
+}
+
+.url-tittle {
+  width: 350px;
+}
+
+.url-input {
+  width: 350px;
+}
