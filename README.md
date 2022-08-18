@@ -16,32 +16,38 @@
    npm init
    ```
 
-4. 安裝完畢後，繼續輸入：
+4. npm載入完畢後，繼續安裝express，已執行環境：
 
    ```bash
-   npm run start  / npm run dev
+   npm i express@4.16.4
    ```
 
-5. 安裝完畢後，如要載入種子資料：
+5. express安裝完畢後，如要載入種子資料，或直接執行本機伺服器，清輸入以下指令：
 
    ```bash
-   npm run seed
+   執行種子資料輸入  npm run seed  /  執行本機伺服器輸入  npm run dev
    ```
 
-6. 若看見此行訊息則代表順利運行，打開瀏覽器進入到以下網址
+6. 若看見此行訊息則代表伺服器連線順利運行
 
    ```bash
-   Listening on http://localhost:3000
+   connect susessful
    ```
 
-7. 若欲暫停使用
+7. 打開瀏覽器進入到以下網址
+
+```bash
+   http://localhost:3000/
+   ```
+
+8. 若欲暫停使用
 
    ```bash
    ctrl + c
    ```
 
 ## 使用版本
-* Node.js - v16.15.1
+* Node.js - v 16.16.0
 * express - v 4.16.4
 * express-handlebars - v 3.0.0
 * nodemon - v 2.0.19
