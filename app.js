@@ -26,14 +26,13 @@ app.use(parser.urlencoded({ extended: 'ture' }))
 // 以下開始設定路由-------------------------------------------------------
 app.get('/', (req, res) => {
   res.render('index')
-  console.log(req)
 })
 
 app.post('/', (req, res) => {
   let creatNum = randomNumber()
   const Url = req.body.url
-  if (!Url) {
-    return res.redirect('/')
+  if (!Url || !Url.includes('http')) {
+    return res.render('index', { alart: '清輸入正確網址 或 不能留白' })
   }
   // 以上為何要return其實有點不太能理解 助教有看到的話 希望可以幫我回答 哈哈!!
   const newUrl = new urlAdress({
