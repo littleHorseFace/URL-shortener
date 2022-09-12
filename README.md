@@ -22,25 +22,33 @@
    npm i express@4.16.4
    ```
 
-5. express安裝完畢後，如要載入種子資料，或直接執行本機伺服器，清輸入以下指令：
+3. 設定MongoDB資料庫
+> 設定環境變數 MONGODB_URI_URLCRETER 為資料庫URI
+> 或於config資料夾 mongoose.js 第3行 修改連線資料庫
+```js
+  mongoose.connect('資料庫URI', { useNewUrlParser: true, useUnifiedTopology: true })
+```
+   確認已安裝node.js,npm套件,MongoDb雲端版,圖形化介面Robo3T
+
+6. express安裝完畢後，如要載入種子資料，或直接執行本機伺服器，清輸入以下指令：
 
    ```bash
    執行種子資料輸入  npm run seed  /  執行本機伺服器輸入  npm run dev
    ```
 
-6. 若看見此行訊息則代表伺服器連線順利運行
+7. 若看見此行訊息則代表伺服器連線順利運行
 
    ```bash
    connect susessful
    ```
 
-7. 打開瀏覽器進入到以下網址
+8. 打開瀏覽器進入到以下網址
 
 ```bash
    http://localhost:3000/
    ```
 
-8. 若欲暫停使用
+9. 若欲暫停使用
 
    ```bash
    ctrl + c
